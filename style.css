@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    text-align: center;
+    font-size: 2em;
+    color: white; 
+    
+}
+
+p,a,label{
+    color: white;
+   
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(/assets/back.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 40px;
+    backdrop-filter: blur(15px);
+}
+
+.box-input{
+    position: relative;
+    margin: 40px 0;
+    border-bottom: 2px solid #fff;
+}
+
+.box-input label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: .5s;
+
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+}
+
+.box-input input{
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    outline: none;
+    border:none;
+    padding: 0 35px 0 5px;
+    color: #fff;
+
+}
+
+.box-input ion-icon{
+    position: absolute;
+    right: 5px;
+    color: #fff;
+}
+
+.forget{
+    margin: -10px 0 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.forget a{
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.forget a:hover{
+    text-decoration: underline;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.register{
+    margin:10px 0 5px
+}
+
+.register p a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register p a:hover{
+    text-decoration: underline;
+}
